@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RA-Admin Login</title>
+    <link rel="stylesheet" href="assets/dist/css/formLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+
+</head>
+
+<body>
+    <div class="wrapper-form">
+        <div class="login-container">
+            <div class="login-left">
+                <img src="../Common/assets/image/bg-login.png" alt="Illustration">
+            </div>
+            <div class="login-right">
+                <div class="login-header">
+                    <h2>
+                        <img src="../Common/assets/image/logo-form.png" alt="">
+                    </h2>
+                    <p>Đăng nhập để trải nghiệm dịch vụ của chúng tôi</p>
+                </div>
+                <form action="<?= BASE_URL_ADMIN . '?act=check-login-admin' ?>" method="post">
+                    <div class="input-group">
+                        <label for="username">Email</label>
+                        <input type="text" id="username" placeholder="Xin mời nhập email..." name="email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Xin mời nhập mật khẩu" name="password">
+                    </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn-login">Sign In</button>
+                    <p class="signup-text">Don't Have Your Account yet? <a href="#">Sign up</a></p>
+                    <div class="social-login">
+                        <p>Or sign in with</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
