@@ -25,9 +25,9 @@ require_once './Models/AdminSanPham.php';
 // Route
 $act = $_GET['act'] ?? '/';
 
-// if ($act !== 'login-admin' && $act !== 'check-login-admin' && $act !== 'logout-admin' && $act !== 'view-logout') {
-//     checkLoginAdmin();
-// }
+if ($act !== 'login-admin' && $act !== 'check-login-admin' && $act !== 'logout-admin' && $act !== 'view-logout') {
+    checkLoginAdmin();
+}
 match ($act) {
     '/' => (new HomeAdminsControllers())->HomeIndex(),
 
@@ -82,9 +82,9 @@ match ($act) {
     // 'chi-tiet-khach-hang' => (new AdminTaiKhoanController)->detailKhachHang(),
 
 
-    // // route auth
-    // 'login-admin' => (new AdminTaiKhoanController)->formLogin(),
-    // 'check-login-admin' => (new AdminTaiKhoanController)->login(),
+    // route auth
+    'login-admin' => (new AdminTaiKhoanController)->formLogin(),
+    'check-login-admin' => (new AdminTaiKhoanController)->login(),
 
     // 'logout-admin' => (new AdminTaiKhoanController)->logout(),
 
