@@ -59,4 +59,24 @@ class AdminTaiKhoanController
             }
         }
     }
+    public function logout()
+    {
+        if (isset($_SESSION['user_admin'])) {
+            unset($_SESSION['user_admin']);
+            $_SESSION['alert'] = [
+                'title' => 'Success',
+                'message' => 'Đăng xuất tài khoản thành công!',
+                'type' => 'success',
+                'redirect' => BASE_URL_ADMIN . '?act=view-logout',
+            ];
+            showAlert();
+            exit();
+        }
+    }
+
+    public function tabLogout()
+    {
+        require_once './Views/auth/viewLogout.php';
+    }
+    
 }
