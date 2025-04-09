@@ -25,9 +25,9 @@ require_once './Models/AdminSanPham.php';
 // Route
 $act = $_GET['act'] ?? '/';
 
-// if ($act !== 'login-admin' && $act !== 'check-login-admin' && $act !== 'logout-admin' && $act !== 'view-logout') {
-//     checkLoginAdmin();
-// }
+if ($act !== 'login-admin' && $act !== 'check-login-admin' && $act !== 'logout-admin' && $act !== 'view-logout') {
+    checkLoginAdmin();
+}
 match ($act) {
     '/' => (new HomeAdminsControllers())->HomeIndex(),
 
