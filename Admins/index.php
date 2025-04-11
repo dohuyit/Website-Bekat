@@ -9,7 +9,7 @@ require_once '../Common/PDO.php'; // Hàm hỗ trợ
 require_once './Controllers/ControllersDanhMuc.php';
 require_once './Controllers/ControllersSanPham.php';
 require_once './Controllers/ControllersHome.php';
-// require_once './Controllers/ControllersTaiKhoan.php';
+require_once './Controllers/ControllersTaiKhoan.php';
 // require_once './Controllers/ControllersDonHang.php';
 // require_once './Controllers/ControllersBinhLuan.php';
 
@@ -19,7 +19,7 @@ require_once './Models/AdminTrangChu.php';
 require_once './Models/AdminDanhMuc.php';
 require_once './Models/AdminSanPham.php';
 // require_once './Models/AdminDonHang.php';
-// require_once './Models/AdminTaiKhoan.php';
+require_once './Models/AdminTaiKhoan.php';
 // require_once './Models/AdminBinhLuan.php';
 
 // Route
