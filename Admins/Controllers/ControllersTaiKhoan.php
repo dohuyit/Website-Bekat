@@ -340,7 +340,6 @@ class AdminTaiKhoanController
             $confirm_pass = $_POST['confirm_pass'];
 
 
-
             // Lấy thông tin user từ sesion
             $user  = $this->modelTaiKhoan->getTaiKhoanformEmail($_SESSION['user_admin'][0]);
             // var_dump($user);
